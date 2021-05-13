@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB BIN LÀM</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
     <link rel="icon" href="/assets/img/favicon/favicon1.png" type="image/gif" sizes="16x16">
 </head>
@@ -35,6 +36,10 @@
             <!-- Begin: Search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="ti-menu"></i>
             </div>
             <!-- End: Search button -->
         </div>
@@ -170,5 +175,35 @@
             <p class="footer-copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
+
+    <script>
+        // Đóng/ mở menu
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto'
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // Tự động đóng/ mở menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
 </body>
 </html>

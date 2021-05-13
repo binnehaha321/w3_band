@@ -1,0 +1,49 @@
+/* Mobile */
+@media (max-width: 740px) {
+    #nav {
+        display: block;
+    }
+
+    #nav .subnav {
+        padding: 10px 30px;
+        position: initial;
+        background: #000;
+    } 
+
+    #nav .subnav a {
+        color: #fff;
+    }
+    
+    #nav > li {
+        display: block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        padding: 12px 24px;
+        display: block;
+        color: #fff;
+    }
+
+    #content .member-item {
+        float: none;
+        width: 100%;
+    }
+
+    .place-item {
+        float: none;
+        padding: 8px;
+        width: 100%;
+    }
+}

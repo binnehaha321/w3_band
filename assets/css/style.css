@@ -41,6 +41,34 @@ html {
     z-index: 1;
 }
 
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+#header .mobile-menu-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: rgb(197, 196, 196);
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
 #nav {
     display: inline-block;
 }
@@ -67,21 +95,6 @@ html {
     font-size: 14px;
 }
 
-#header .search-btn {
-    float: right;
-    padding: 0 21px;
-}
-
-#header .search-btn:hover {
-    background-color: #f44336;
-    cursor: pointer;
-}
-
-#header .search-icon {
-    color: #fff;
-    font-size: 20px;
-    line-height: 46px;
-}
 
 #nav .subnav {
     display: none; /*không hiển thị ra */
