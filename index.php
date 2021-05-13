@@ -172,7 +172,7 @@
                 <a href=""><i class="twitter ti-twitter"></i></a>
                 <a href=""><i class="linkedin ti-linkedin"></i></a>
             </div>
-            <p class="footer-copyright">Powered by <a href="">w3.css</a></p>
+            <p class="footer-copyright">Powered by <a href="">Bin</a></p>
         </div>
     </div>
 
