@@ -7,25 +7,26 @@
     <title>WEB BIN LÀM</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
+    <link rel="icon" href="/assets/img/favicon/favicon1.png" type="image/gif" sizes="16x16">
 </head>
 <body>
     <div id="main">
         <div id="header">
             <!-- Begin: Nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -47,7 +48,7 @@
 
         <div id="content">
             <!-- Section: The Band -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">
@@ -73,7 +74,7 @@
             </div>
 
             <!-- Section: Tour dates -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -119,7 +120,7 @@
             </div>
 
             <!-- Section: Contact -->
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
@@ -133,15 +134,15 @@
                             <form>
                                 <div class="name-email">
                                     <div class="name">
-                                        <input type="text" class="col-half" placeholder="Name">
+                                        <input type="text" class="col-half" required placeholder="Name">
                                     </div>
                                     <div class="email">
-                                        <input type="text" class="col-half" placeholder="Email">
+                                        <input type="text" class="col-half" required placeholder="Email">
                                     </div>
                                 </div>
         
                                 <div class="message">
-                                    <input type="text" class="col-full" placeholder="Message">
+                                    <input type="text" class="col-full" required placeholder="Message">
                                 </div>  
         
                                 <div class="send-btn">
@@ -156,7 +157,7 @@
                 <img src="/assets/img/maps/site-maps.jpg" style="width: 100%;">
             </div>
         </div>
-
+        <!-- Footer -->
         <div id="footer">
             <div class="social-media">
                 <a href=""><i class="facebook ti-facebook"></i></a>

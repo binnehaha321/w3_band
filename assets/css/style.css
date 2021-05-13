@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -149,6 +150,7 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 16px;
     margin-left: auto;
     margin-right: auto;
@@ -310,7 +312,7 @@ html {
     margin-bottom: 16px;
     float: left;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .contact-address i {
@@ -336,6 +338,7 @@ html {
 .contact-input .col-full {
     padding: 11px;
     border: 1px solid #ccc;
+    outline: none;
 }
 
 .contact-input .col-half {
@@ -352,11 +355,17 @@ html {
     margin-top: 16px;
 }
 
+.contact-input .send-btn:hover {
+    opacity: 0.5;
+    color: #000;
+}
+
 .contact-input .send-btn .send-submit {
     padding: 11px 17px;
     border: none;
     background-color: #000;
     color: #fff;
+    cursor: pointer;
 }
 
 /* Footer section */
