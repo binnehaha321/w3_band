@@ -1,5 +1,9 @@
 /* Mobile */
 @media (max-width: 740px) {
+    #slider .text-content {
+        display: none;
+    }
+
     #nav {
         display: block;
     }
@@ -44,6 +48,15 @@
     .place-item {
         float: none;
         padding: 8px;
+        width: 100%;
+    }
+
+    .contact-input {
+        float: none;
+        width: 100%;
+    }
+
+    .contact-input .col-half {
         width: 100%;
     }
 }
