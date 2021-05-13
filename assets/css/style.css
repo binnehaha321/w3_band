@@ -1,0 +1,391 @@
+/*Reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+#main {
+
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+/* CSS lên lớp li cấp 1 của nav */
+#nav > li {
+    display: inline-block; /* đưa các element lên cùng 1 dòng */
+
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#nav .subnav {
+    display: none; /*không hiển thị ra */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none; /* bỏ gạch chân */
+    line-height: 46px; /* căn chữ nằm giữa box */
+    padding: 0 24px; /* trên dưới = 0, 2 bên 24px */
+    display: inline-block; /* làm khối hover lớn hơn */
+}
+
+/* gộp 2 selectors */
+#nav .subnav li:hover,
+#nav > li:hover > a { /* làm hiệu ứng rê chuột vào đổi màu */
+    color: #000;
+    background-color: #ccc;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slide/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin: 25px 0;
+}
+
+#content{
+
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+#content .content-section .about-text {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+#content .member-list {
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+/* Tour section */
+.tour-section {
+    background-color: #000;
+}
+
+.ticket-list {
+    background-color: #fff;
+    list-style-type: none;
+}
+
+.ticket-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+    font-size: 15px;
+    padding: 3px 4px;
+    margin-left: 16px;
+    background-color: #f44336;
+}
+
+.ticket-list .sold-out:hover {
+    cursor: not-allowed;
+}
+
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.ticket-list .quantity:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Places */
+.place-list {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.place-body {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.place-heading {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.place-time {
+    margin: 15px 0;
+    color: #757575;
+}
+
+.place-desc {
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+.place-buy-btn {
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Contact info */
+
+.contact-info {
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.contact-address {
+    margin-bottom: 16px;
+    float: left;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-address i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-input {
+    width: 50%;
+    float: right;
+    font-size: 15px;
+}
+
+.contact-input .name, .email {
+    display: inline;
+}
+
+.contact-input .email .col-half {
+    float: right;
+}
+
+.contact-input .col-half,
+.contact-input .col-full {
+    padding: 11px;
+    border: 1px solid #ccc;
+}
+
+.contact-input .col-half {
+    width: 48%;
+}
+
+.contact-input .col-full {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.contact-input .send-btn {
+    float: right;
+    margin-top: 16px;
+}
+
+.contact-input .send-btn .send-submit {
+    padding: 11px 17px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Footer section */
+#footer {
+    text-align: center;
+    padding: 64px 16px;
+    box-sizing: border-box;
+}
+
+/* Social media */
+#footer .social-media {
+    font-size: 24px;
+}
+
+#footer .social-media a {
+    text-decoration: none;
+    color: #757575;
+}
+
+#footer .social-media a:hover {
+    opacity: 0.6;
+}
+
+#footer .footer-copyright {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #757575;
+}
+
+#footer .footer-copyright a {
+    color: #757575;
+}
